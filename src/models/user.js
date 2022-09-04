@@ -17,7 +17,7 @@ UserSchema.methods.checkPassword = async function(password) {
 };
 
 UserSchema.static.findByUsername = function(username) {
-  return this.findOne({ username })
+  return this.findOne({ username });
 }
 
 const User = mongoose.model("User", UserSchema);
